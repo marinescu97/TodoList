@@ -1,0 +1,5 @@
+Buy Groceries	Purchase essential groceries including milk, bread, eggs, and vegetables for the week.	10-07-2024
+Schedule Doctor's Appointment	Call Dr. Smith's office to schedule an annual check-up for next week.	28-06-2024
+Finish Project Report	Complete and review the final draft of the project report and submit it to the manager by 5 PM.	21-06-2024
+Clean the Garage	Organize and clean out the garage, disposing of any unnecessary items and sorting tools.	05-07-2024
+Prepare Presentation Slides	Create and design slides for the upcoming client meeting, focusing on key project milestones and outcomes.	23-06-2024

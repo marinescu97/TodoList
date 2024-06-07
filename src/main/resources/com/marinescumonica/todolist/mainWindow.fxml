@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!-- This file represents the main window of the application. -->
+
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinescumonica.todolist.MainController">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="New..." onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox>
+                    <Button fx:id="fileBtn" onMouseClicked="#showNewItemDialog"/>
+                    <ToggleButton fx:id="filterToggleButton" text="Today's items" onAction="#handleFilterButton">
+                        <tooltip>
+                            <Tooltip text="Down: Show today's items only. Up: Show all items"/>
+                        </tooltip>
+                    </ToggleButton>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+    <left>
+        <ListView fx:id="todoListView" onKeyPressed="#handleDeleteKey">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox>
+            <TextArea fx:id="detailsTextArea" VBox.vgrow="ALWAYS" editable="false" wrapText="true"/>
+            <HBox>
+                <Label text="Due: " style="-fx-background-color: white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadLineLabel" style="-fx-background-color: white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
